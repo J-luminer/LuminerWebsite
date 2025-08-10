@@ -67,10 +67,18 @@
       </a>
     </div>
   </main>
-
+  <script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LeUwaArAAAAAIRTOTYI5vtsGGUHO3tnU0s4fblr', {action: 'LOGIN'});
+    });
+  }
+  </script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
