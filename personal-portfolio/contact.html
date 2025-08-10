@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeUwaArAAAAAIRTOTYI5vtsGGUHO3tnU0s4fblr"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact - Luminer-J</title>
@@ -35,7 +34,7 @@
       <textarea id="message" name="message" placeholder="Your message" required></textarea>
 
       <div class="recaptcha-wrapper" style="margin-bottom: 1rem;">
-        <div class="g-recaptcha" data-sitekey="6LeUwaArAAAAAIRTOTYI5vtsGGUHO3tnU0s4fblr"></div>
+        <div class="g-recaptcha" data-sitekey="6Ldq-mUrAAAAAE_RvwL3bN_MnaKFLSoxh86C7Yuk"></div>
       </div>
 
       <button type="submit" class="btn-send">Send Message</button>
@@ -67,18 +66,8 @@
       </a>
     </div>
   </main>
-  <script>
-  function onClick(e) {
-    e.preventDefault();
-    grecaptcha.enterprise.ready(async () => {
-      const token = await grecaptcha.enterprise.execute('6LeUwaArAAAAAIRTOTYI5vtsGGUHO3tnU0s4fblr', {action: 'LOGIN'});
-    });
-  }
-  </script>
+
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
