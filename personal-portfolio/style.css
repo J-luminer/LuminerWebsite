@@ -285,7 +285,7 @@ p {
 /* Contact */
 
 .contact-container {
-  width: 96%;             /* penuh lebar parent */
+  width: 93%;             /* penuh lebar parent */
   max-width: 474px;        /* biar ga terlalu lebar */
   margin: 2rem auto 4rem;  /* tetap di tengah */
   background: rgba(255, 255, 255, 0.05);
@@ -453,4 +453,5 @@ p {
     gap: 1.5rem;
   }
 }
+
 
